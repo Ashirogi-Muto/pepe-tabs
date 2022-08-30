@@ -1,0 +1,19 @@
+{
+    "name": "Pepe Tabs",
+    "description": "Let Pepe manage your tabs",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/pepe-16.png",
+            "32": "/images/pepe-32.png",
+            "48": "/images/pepe-48.png",
+            "128": "/images/pepe-120.png"
+          }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"]
+}
