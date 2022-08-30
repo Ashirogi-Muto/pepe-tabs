@@ -5,10 +5,38 @@
 <head>
 	<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 	<div class="tab-form">
-		<button id="changeColor"></button>
+		<section class="name-section">
+			<div class="form-header">
+				<div class="name-heading">
+					<p>Name</p>
+				</div>
+			</div>
+			<div class="form-body">
+				<div class="name-input">
+					<input onfocus="getName" type="text" id="tab-group-name" />
+				</div>
+			</div>
+		</section>
+		<section class="url-section">
+			<div class="form-header">
+				<div class="url-heading">
+					<p>URL</p>
+				</div>
+			</div>
+			<div class="form-body">
+				<div class="url-input">
+					<input onfocus="getUrl" type="text" id="tab-url-pattern" />
+				</div>
+			</div>
+		</section>
+		<section class="add-new">
+			<button id="add-new-button">Add new</button>
+		</section>
 	</div>
 </body>
 <script src="popup.js"></script>
+
 </html>
